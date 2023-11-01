@@ -11,4 +11,4 @@ def posts(request: HttpRequest) -> HttpResponse:
 
 
 def post_detail(request: HttpRequest, slug: str) -> HttpResponse:
-    pass
+    return render(request, 'blog/post_detail.html')

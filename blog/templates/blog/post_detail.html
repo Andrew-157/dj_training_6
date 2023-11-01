@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}
+This Post Title
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/post_detail.css' %}?timestamp={% now 'U' %}">
+{% endblock %}
+
+{% block content %}
+<section id="summary">
+    <h2>Post Title</h2>
+    <article>
+        <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title">
+        <address>
+            By Andrew-157
+        </address>
+        <div>
+            Last updated on <time datetime="2023-11-01">November 1st, 2023</time>
+        </div>
+    </article>
+</section>
+<main>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, delectus.
+        Corrupti repellendus magni, assumenda eos provident officiis ipsam recusandae ad,
+        necessitatibus quae dolore aliquid, temporibus totam fugit dicta officia porro!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, delectus.
+        Corrupti repellendus magni, assumenda eos provident officiis ipsam recusandae ad,
+        necessitatibus quae dolore aliquid, temporibus totam fugit dicta officia porro!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, delectus.
+        Corrupti repellendus magni, assumenda eos provident officiis ipsam recusandae ad,
+        necessitatibus quae dolore aliquid, temporibus totam fugit dicta officia porro!
+    </p>
+</main>
+{% endblock %}
